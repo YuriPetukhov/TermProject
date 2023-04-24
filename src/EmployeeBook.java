@@ -184,12 +184,12 @@ public class EmployeeBook {
     }
 
     public void increaseWageUnit(int unit, int percent) {
+        float wage = 0;
         for (int i = 0; i < size; i++) {
-            float salary = 0;
             Employee employee = employees[i];
             if (employee.getUnitNumber() == unit) {
-                salary += employee.getSalary() + employee.getSalary() / 100 * percent;
-                employees[i].setSalary(salary);
+                wage = employee.getSalary() + employee.getSalary() / 100 * percent;
+                employees[i].setSalary(wage);
                 return;
             }
         }
