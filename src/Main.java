@@ -7,7 +7,7 @@ public class Main {
         employeeBook.addEmployee("Петров Петр Петрович", 2, 120_000);
         employeeBook.addEmployee("Валентинова Валентина Валентиновна", 3, 110_000);
         employeeBook.addEmployee("Евгеньева Евгения Евгеньевна", 4, 105_000);
-        employeeBook.addEmployee("Маратов Марат Маратович", 5, 115_000);
+        employeeBook.addEmployee("Маратов Марат Маратович", 3, 115_000);
 
         System.out.println("Задачи базовой сложности");
         System.out.println("Для проверки. Получить список всех сотрудников со всеми имеющимися по ним данными");
@@ -67,7 +67,7 @@ public class Main {
         System.out.println("Задачи высокой сложности");
         System.out.println();
         System.out.println("Задача 16. Добавить сотрудников");
-        employeeBook.adEmployeeByName("Олег Олегович Олегов", 2, 118_000);
+        employeeBook.adEmployeeByName("Олег Олегович Олегов", 10, 118_000);
         System.out.println("Для проверки. Книга включает " + employeeBook.getCurrentSize() + " сотрудников");
         System.out.println();
         System.out.println("Для проверки");

@@ -26,7 +26,7 @@ public class Employee {
 
     public void setFullName(String fullName) {
         if (fullName.isEmpty()) {
-            System.out.println("Поле не может быть пустым");
+            throw new IllegalArgumentException("Поле не может быть пустым");
         } else {
             this.fullName = fullName;
         }
@@ -37,8 +37,8 @@ public class Employee {
     }
 
     public void setUnitNumber(int unitNumber) {
-        if (unitNumber > 1 && unitNumber < 5) {
-            System.out.println("Номер отдела должен находиться в интервале от 1 до 5");
+        if (unitNumber > 5) {
+            throw new IllegalArgumentException("Номер отдела должен находиться в интервале от 1 до 5");
         }
         this.unitNumber = unitNumber;
     }
@@ -49,7 +49,7 @@ public class Employee {
 
     public void setSalary(float salary) {
         if (salary < 50_000) {
-            System.out.println("Зарплата не может быть меньше 50_000 руб.");
+            throw new IllegalArgumentException("Зарплата не может быть меньше 50_000 руб.");
         }
         this.salary = salary;
     }
